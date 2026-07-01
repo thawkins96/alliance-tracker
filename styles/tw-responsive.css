@@ -1,0 +1,28 @@
+/* Minimal responsive utility CSS to restore core Tailwind md:* visibility and a few spacing utilities.
+   This is not a full Tailwind replacement — it's a small, safe subset to make the
+   project page render correctly on GitHub Pages while you reintroduce a proper
+   compiled Tailwind stylesheet.
+*/
+
+.hidden { display: none !important; }
+
+@media (min-width: 768px) {
+  /* visibility */
+  .md\:block { display: block !important; }
+  .md\:flex { display: flex !important; }
+  .md\:grid { display: grid !important; }
+  .md\:inline-block { display: inline-block !important; }
+  .md\:inline-flex { display: inline-flex !important; }
+  .md\:table { display: table !important; }
+  .md\:hidden { display: none !important; }
+
+  /* spacing (common ones used in the layout) */
+  .md\:px-6 { padding-left: 1.5rem !important; padding-right: 1.5rem !important; }
+  .md\:px-4 { padding-left: 1rem !important; padding-right: 1rem !important; }
+  .md\:py-3 { padding-top: .75rem !important; padding-bottom: .75rem !important; }
+  .md\:py-2 { padding-top: .5rem !important; padding-bottom: .5rem !important; }
+
+  /* text/layout helpers */
+  .md\:text-left { text-align: left !important; }
+  .md\:w-auto { width: auto !important; }
+}
